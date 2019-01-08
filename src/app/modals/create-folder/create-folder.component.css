@@ -1,0 +1,21 @@
+.header{
+    margin: 2px;
+}
+.description{
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+mat-form-field{
+    width: 300px;
+}
+
+
+button{
+    margin: 5px;
+}

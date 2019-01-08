@@ -1,0 +1,24 @@
+<div class="modal">
+    <div class="header"> Создание мета-файла</div>
+    <div class="description"> В папку </div>
+  <div class="content"> 
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Название файла">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+    <mat-select matNativeControl placeholder="Добавьте расширения" value="1" class="drop" multiple>
+        <mat-option value="1">
+          .gid
+        </mat-option>
+        <mat-option value="2">
+            .exe
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  
+    <div class="footer">
+    <button mat-raised-button color="primary">Создать</button>
+    <button mat-raised-button color="secondary" (click)="onNoClick()">Отменить</button>
+  </div>
+  </div>

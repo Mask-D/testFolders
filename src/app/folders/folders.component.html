@@ -1,0 +1,20 @@
+<h3>Корневая директория</h3>
+<button mat-stroked-button color="primary" class="addFolder" style="color:dodgerblue" (click)="modalCreateFolder()"> <i class="material-icons"> add</i> Новая папка</button>
+
+<ul class="treeCSS">
+  <li>Текущий проект
+    <ul>
+      <li class="shadow1"> <div class="shadow tree"> <i class="material-icons"> folder </i><div class="obj">  Папка</div> <div class="del"><button mat-stroked-button color="warn" class="del" (click)="modalDelete()"><i class="material-icons"> delete </i></button></div></div>
+        <ul>
+          <li class="shadow1"> <div class="shadow tree"> <div class="obj">HTML.html</div> <div class="del"><button mat-stroked-button color="warn" class="del"><i class="material-icons"> delete </i></button></div></div>
+          <li class="shadow1"> <div class="shadow tree"> <div class="obj">CSS.css</div> <div class="del"><button mat-stroked-button color="warn" class="del"><i class="material-icons"> delete </i></button></div> </div>
+          <li class="shadow1"> <div class="shadow tree"> <div class="obj">JavaScript.js</div> <div class="del"><button mat-stroked-button color="warn" class="del"><i class="material-icons"> delete </i></button></div></div>
+            <li class="shadow1"> <div class="shadow tree"> <div class="obj">CSS.css</div> <div class="del"><button mat-stroked-button color="warn" class="del"><i class="material-icons"> delete </i></button></div></div>
+              <ul> <li> <div class="shadow tree"> <div class="obj">kek.k</div> <div class="del"><button mat-stroked-button color="warn" class="del"><i class="material-icons"> delete </i></button></div></div></li></ul>
+        </ul>
+      <li class="shadow1"> <div class="shadow tree"><i class="material-icons"> folder </i><div class="obj">  Контакты </div> <div class="del"><button mat-stroked-button color="warn" class="del"><i class="material-icons"> delete </i></button></div></div>
+          <ul>
+            <li> <div class="shadow tree"> <div class="obj">file.azaza</div> <div class="del"><button mat-stroked-button color="warn" class="del"><i class="material-icons"> delete </i></button></div></div>
+          </ul>
+    </ul>
+</ul>

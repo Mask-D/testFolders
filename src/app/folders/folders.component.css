@@ -1,0 +1,64 @@
+.treeCSS, 
+.treeCSS ul,
+.treeCSS li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  list-style: none;
+}
+.treeCSS ul {
+  margin: 0 0 0 8px; /* вести линию вниз где-то с полбуквы родителя */
+}
+.treeCSS > li:not(:only-child),
+.treeCSS li li {
+  position: relative;
+  padding: 3px 0 0 19px; /* отступ до текста; для раскрывающегося списка в ряде случаев (в Хроме есть баг) padding-top (.2em) лучше указывать в px */
+}
+.treeCSS li:not(:last-child) {
+  border-left: 1px solid #ccc; /* толщина, цвет и стиль (вместо сплошной пунктирная или точечная) вертикальной линии */
+}
+.treeCSS li li:before,
+.treeCSS > li:not(:only-child):before { /* горизонтальная линия */
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 17px; /* не более отступа до текста (1.2em) */
+  height: 31px; /* начинается приблизительно с половины высоты буквы (.5em + .2em) */
+  border-bottom: 1px solid #ccc;
+}
+.treeCSS li:last-child:before { /* вертикальная линия последнего пункта в каждом списке */
+  width: calc(17px - 1px); /* для перфекционистов */
+  border-left: 1px solid #ccc;
+}
+
+.tree{
+    margin-left: 0;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+.tree:hover{
+  background-color: whitesmoke;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.addFolder{
+    margin-bottom: 15px;
+    outline: dodgerblue 2px;
+    box-shadow: 0 0 2px dodgerblue;
+    font-size: 18px;
+
+}
+
+.del{
+  display: flex;
+  align-self: flex-end;
+}
+.obj{
+  display: flex;
+  width: 100%;
+}
